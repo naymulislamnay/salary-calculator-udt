@@ -19,5 +19,7 @@ function salaryCalculator() {
 
 
     document.getElementById("result").innerHTML = `You Get Total : ${payAble.toFixed(2)} tk this Month`
+    document.getElementById("extraResult").innerHTML = `EVF : ${EVF.toFixed(2)} tk <br>
+    Total WeekEnd : ${totalWeekEndTK.toFixed(2)} tk`
 }
 
