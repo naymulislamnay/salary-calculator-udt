@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./scripts/script.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 
-<body>
+<body class="sora-regular">
     <header>
 
     </header>
 
     <main>
-        <div class="inputField">
-            <label for="salary">----</label>
-            <input type="number" id="salary" placeholder="Salary" value=""><br>
-            <label for="mill">----</label>
-            <input type="number" id="mill" placeholder="Mill" value=""><br>
-            <label for="petiCash">----</label>
-            <input type="number" id="petiCash" placeholder="Peti Cash" value=""><br>
-            <label for="loan">----</label>
-            <input type="number" id="loan" placeholder="Loan" value=""><br>
-            <label for="weekEnds">----</label>
-            <input type="number" id="weekEnds" placeholder="Total Week End" value=""><br>
-            <button onclick="salaryCalculator()">Calculate</button>
-        </div>
+        <section class="card">
+            <div class="inputField">
+                <label for="salary">Input You Salary</label>
+                <input type="number" id="salary" placeholder="Salary" value="">
+                <label for="mill">Input Total Mill TK (if applicable)</label>
+                <input type="number" id="mill" placeholder="Mill" value="">
+                <label for="petiCash">Input PetiCash TK (if applicable)</label>
+                <input type="number" id="petiCash" placeholder="Peti Cash" value="">
+                <label for="loan">Input Loan TK (if applicable)</label>
+                <input type="number" id="loan" placeholder="Loan" value="">
+                <label for="weekEnds">Input Total Number of WeekEnds</label>
+                <input type="number" id="weekEnds" placeholder="Total WeekEnds" value="">
+                <button onclick="salaryCalculator()">Calculate</button>
+            </div>
 
-        <div class="result" id="result"></div>
-        <div class="extraResult" id="extraResult"></div>
-
-
-
+            <div class="result" id="result"></div>
+            <div class="extraResult" id="extraResult"></div>
+        </section>
     </main>
 
     <footer>
