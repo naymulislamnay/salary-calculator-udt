@@ -19,7 +19,6 @@ body {
 }
 
 
-
 .inputField {
     display: flex;
     flex-direction: column;
@@ -28,34 +27,47 @@ body {
 
 .inputField label {
     margin-top: 8px;
+    text-align: left;
+    font-weight: 400;
+}
+
+#weekEndsLabel {
+    font-size: 14px;
 }
 
 .inputField input {
-    padding: 5px;
+    padding: 8px;
     border: none;
     border-radius: 5px;
+    color: white;
     background-color: rgba(255, 255, 255, 0.05);
 }
 
 button {
     margin-top: 10px;
-    padding: 5px;
+    background-color: #056608;
+    padding: 8px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-
+    color: white;
+    font-weight: 600;
 }
 
 .card {
     margin: 0 auto;
     padding: 2em;
-    width: 300px;
+    max-width: 320px;
     background: #1c1f2b;
     text-align: center;
     border-radius: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.result {
+    margin-top: 10px;
 }
 
 @property --angle {

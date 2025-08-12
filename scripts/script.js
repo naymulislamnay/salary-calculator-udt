@@ -6,7 +6,8 @@ function salaryCalculator() {
     let numberOfWeekEnd = parseFloat(document.getElementById("weekEnds").value) || 0;
 
     if (isNaN(mainSalary)) {
-        document.getElementById("result").innerHTML = "⚠ Please Enter Your Salary!";
+        document.getElementById("result").innerHTML = "<div color: red;>⚠ Please Enter Your Salary!</div>";
+        document.getElementById("result").style.color = "red";
         return;
     }
 
@@ -15,11 +16,13 @@ function salaryCalculator() {
     const totalWeekEndTK = oneWeekEndTK * numberOfWeekEnd;
     const EVF = mainSalary * (3 / 100);
 
+    document.getElementById("result").style.color = "green";
     const payAble = mainSalary + totalWeekEndTK - EVF - mill - petiCash - loan;
 
 
-    document.getElementById("result").innerHTML = `You Get Total : ${payAble.toFixed(2)} tk this Month`
-    document.getElementById("extraResult").innerHTML = `EVF : ${EVF.toFixed(2)} tk <br>
-    Total WeekEnd : ${totalWeekEndTK.toFixed(2)} tk`
+    document.getElementById("result").innerHTML = `<span style="font-size: 12px;">You Will Get : <span style="font-size: 18px;">${payAble.toFixed(2)} tk</span> this Month</span>`
+    document.getElementById("extraResult").innerHTML = `<span style="font-size: 12px;">Total Earned : ${(mainSalary + totalWeekEndTK).toFixed(2)} <br> 
+    EVF : <span style="color: red;">${EVF.toFixed(2)} tk </span> <br>
+    Total WeekEnd : ${totalWeekEndTK.toFixed(2)} tk</span>`
 }
 
