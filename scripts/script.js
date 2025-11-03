@@ -23,7 +23,7 @@ function salaryCalculator() {
     const inHand = payAble - inBank;
 
 
-    document.getElementById("result").innerHTML = `<span style="font-size: 12px;">You Will Get : <span style="font-size: 18px;">${payAble.toFixed(2)} tk</span> this Month </br> (In Hand = ${inHand}tk & In Bank = ${inBank}tk) </span>`
+    document.getElementById("result").innerHTML = `<span style="font-size: 12px;">You Will Get : <span style="font-size: 18px;">${payAble.toFixed(2)} tk</span> this Month </br> (In Hand = ${inHand.toFixed(2)}tk & In Bank = ${inBank}tk) </span>`
     document.getElementById("extraResult").innerHTML = `<span style="font-size: 12px;">Total Earned : ${(mainSalary + totalWeekEndTK).toFixed(2)} <br> 
     EVF : <span style="color: red;">${EVF.toFixed(2)} tk </span> <br>
     Total WeekEnd : ${totalWeekEndTK.toFixed(2)} tk</span>`
